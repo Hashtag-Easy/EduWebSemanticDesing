@@ -1,1 +1,1 @@
-# EduWebProject
+# EduWebSemanticDesing
