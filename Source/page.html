@@ -1,28 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Restaurant Website</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
   <header>
     <nav>
       <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#menu">Menu</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="#home" aria-label="Navigate to home">Home</a></li>
+        <li><a href="#menu" aria-label="Navigate to menu">Menu</a></li>
+        <li><a href="#about" aria-label="Navigate to about">About</a></li>
+        <li><a href="#galery" aria-label="Navigate to galery">Galery</a></li>
+        <li><a href="#contact" aria-label="Navigate to contact">Contact</a></li>
       </ul>
     </nav>
   </header>
 
   <main>
     <section id="home">
-      <h1>Welcome to Our Restaurant</h1>
-      <p>Enjoy delicious meals in a cozy atmosphere.</p>
-      <a href="#menu" class="btn">View Menu</a>
+      <div class="radius-background">
+        <h1>Welcome to Our Restaurant</h1>
+        <p>Enjoy delicious meals in a cozy atmosphere.</p>
+        <a href="#menu" class="btn">View Menu</a>
+      </div>
     </section>
 
     <section id="menu">
@@ -49,19 +54,53 @@
 
     <section id="about">
       <h2>About Us</h2>
-      <p>We are a family-owned restaurant serving quality food since 1990.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+        magna aliqua. Mattis enim ut tellus elementum sagittis vitae. Eget magna fermentum iaculis eu non diam
+        phasellus. Et odio pellentesque diam volutpat commodo sed egestas egestas. Sit amet risus nullam eget felis
+        eget. Et sollicitudin ac orci phasellus egestas tellus. Facilisis magna etiam tempor orci eu. Aliquet nec
+        ullamcorper sit amet. Volutpat odio facilisis mauris sit amet massa vitae tortor. Arcu dictum varius duis at
+        consectetur. Turpis egestas pretium aenean pharetra.</p>
+
+      <p>Vitae proin sagittis nisl rhoncus mattis rhoncus. Augue lacus viverra vitae congue. Sollicitudin tempor id eu
+        nisl nunc. Velit egestas dui id ornare. Neque vitae tempus quam pellentesque. Pulvinar mattis nunc sed blandit
+        libero volutpat sed. Id neque aliquam vestibulum morbi blandit. Sed viverra tellus in hac habitasse platea
+        dictumst vestibulum rhoncus. Tempus egestas sed sed risus pretium quam. Viverra nam libero justo laoreet sit.
+        Lacus luctus accumsan tortor posuere ac ut consequat semper viverra. Consequat ac felis donec et odio
+        pellentesque diam volutpat. Aliquam purus sit amet luctus venenatis lectus magna fringilla. Quisque id diam vel
+        quam elementum. Etiam sit amet nisl purus in mollis. Purus sit amet luctus venenatis lectus magna. Fermentum dui
+        faucibus in ornare. Enim eu turpis egestas pretium.</p>
+    </section>
+
+    <section id="galery">
+      <h2>Galery</h2>
+      <h3>Ambient music in our restaurant</h3>
+      <audio controls>
+        <source src="audio.mp3" type="audio/mp3" aria-label="Restaurant ambient music" />
+      </audio>
+      <h3>Video</h3>
+      <video controls>
+        <source src="video.mp4" type="video/mp4" aria-label="Restaurant video" />
+      </video>
     </section>
 
     <section id="contact">
       <h2>Contact Us</h2>
       <ul>
         <li><strong>Address:</strong> 123 Restaurant Street, City, State</li>
-        <li><strong>Phone:</strong> 123-456-7890</li>
-        <li><strong>Email:</strong> info@restaurant.com</li>
+        <li><strong>Phone:</strong> <a href="tel:123-456-7890" aria-label="Call 123-456-7890">123-456-7890</a></li>
+        <li><strong>Email:</strong> <a href="mailto:info@restaurant.com"
+            aria-label="Mail info@restaurant.com">info@restaurant.com</a></li>
       </ul>
     </section>
   </main>
 
+  <footer>
+    <center>
+      <p><strong>Author:</strong> Kacper Żabiński</p>
+    </center>
+  </footer>
+
   <script src="script.js"></script>
 </body>
+
 </html>
