@@ -8,16 +8,29 @@
   <link rel="stylesheet" href="style.css">
 </head>
 
+<!-- https://bezpiecznyautobus.gov.pl/strona-glowna -->
+
 <body>
   <header>
-    <nav>
-      <ul>
-        <li><a href="#home" aria-label="Navigate to home">Home</a></li>
-        <li><a href="#menu" aria-label="Navigate to menu">Menu</a></li>
-        <li><a href="#about" aria-label="Navigate to about">About</a></li>
-        <li><a href="#galery" aria-label="Navigate to galery">Galery</a></li>
-        <li><a href="#contact" aria-label="Navigate to contact">Contact</a></li>
-      </ul>
+    <nav style="display: flex; justify-content: space-between;">
+      <div>
+        <ul>
+          <li><a href="#home" aria-label="Navigate to home">Home</a></li>
+          <li><a href="#menu" aria-label="Navigate to menu">Menu</a></li>
+          <li><a href="#about" aria-label="Navigate to about">About</a></li>
+          <li><a href="#galery" aria-label="Navigate to galery">Galery</a></li>
+          <li><a href="#contact" aria-label="Navigate to contact">Contact</a></li>
+        </ul>
+      </div>
+      <div style="display: flex;">
+        <div>
+          <label class="switch">
+            <input id="contrast-checkbox" type="checkbox" onclick="changeContrast()">
+            <span class="slider round"></span>
+          </label>
+        </div>
+        <div id="contrast-div" style="margin: 3px 6px 3px 12px;">Kontrast</div>
+      </div>
     </nav>
   </header>
 
@@ -71,7 +84,7 @@
         faucibus in ornare. Enim eu turpis egestas pretium.</p>
     </section>
 
-    <section id="galery">
+    <section id="gallery">
       <h2>Galery</h2>
       <h3>Ambient music in our restaurant</h3>
       <audio controls>
@@ -81,6 +94,19 @@
       <video controls>
         <source src="video.mp4" type="video/mp4" aria-label="Restaurant video" />
       </video>
+      <h3>Photos</h3>
+      <img src="photo.jpg" alt="Restaurant photo 1" aria-label="Restaurant photo"/>
+    </section>
+
+    <section id="question-section">
+      <h2>Ask us</h2>
+      <form>
+        <label id="userEmailLabel" for="userEmail">Email: <span aria-label="required">*</span></label><br />
+        <input id="userEmail" type="email" aria-label="Email" required/><br /><br />
+        <label id="questionLabel" for="question">Question: <span aria-label="required">*</span></label><br />
+        <textarea id="question" type="text" aria-label="Question" required> </textarea><br /><br />
+        <input id="submit" aria-label="Submit" type="button" value="Send" />
+      </form>
     </section>
 
     <section id="contact">
@@ -94,7 +120,7 @@
     </section>
   </main>
 
-  <footer>
+  <footer id="footer">
     <center>
       <p><strong>Author:</strong> Kacper Żabiński</p>
     </center>
